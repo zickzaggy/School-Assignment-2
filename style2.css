@@ -1,0 +1,90 @@
+*, html {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+nav {
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    list-style: none;
+}
+
+nav div {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+nav div img {
+    width: 50px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #191919;
+    font-weight: 700;
+    padding: 5px 0px;
+    transition: all;
+    transition-duration: 300ms;
+    border-bottom: 1px solid rgba(0, 0, 0, 0);
+}
+
+nav ul li a:hover {
+    color: rgb(202, 202, 57);
+    border-bottom: 1px solid black;
+}
+
+body {
+    background-image: url(Fiber-Optic.png);
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+main .pembukaan {
+    margin-top: 85px;
+    padding: 200px 0px;
+    background-color: rgba(0, 0, 0, 0.719);
+    border-radius: 10px;
+    margin-left: 80px;
+    margin-right: 80px;
+    color: white;
+}
+
+main .pembukaan h1 {
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bolder;
+}
+
+main .pembukaan p {
+    font-family: 'Times New Roman', Times, serif;
+    padding: 25px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+@media (max-width: 1000px) {
+    nav ul {
+        gap: 1rem;
+    }
+    nav div {
+        font-size: 15px;
+    }
+}
