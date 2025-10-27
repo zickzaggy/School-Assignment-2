@@ -204,7 +204,7 @@ main .ISI .ISIISI ol {
     }
 
     main .pembukaan h1 {
-        font-size: small;
+        font-size: 17px;
     }
     
     main .pembukaan p {
@@ -219,4 +219,5 @@ main .ISI .ISIISI ol {
     main .ISI .ISIISI {
         font-size: xx-small;
     }
+
 }
