@@ -1,0 +1,223 @@
+*, html {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: white;
+}
+
+nav {
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    list-style: none;
+}
+
+nav .menu {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+nav .menu img {
+    width: 40px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #191919;
+    font-weight: 700;
+    padding: 5px 0px;
+    transition: all;
+    transition-duration: 300ms;
+    border-bottom: 1px solid rgba(0, 0, 0, 0);
+}
+
+nav ul li a:hover {
+    color: rgb(202, 202, 57);
+    border-bottom: 1px solid black;
+}
+
+nav .menu-icon {
+    font-size: 27px;
+    display: none;
+}
+
+nav .menu-paragraph {
+    display: none;
+}
+
+main {
+    background-image: url(Fiber-Optic.png);
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+main .pembukaan {
+    padding: 150px 0px;
+    background-color: rgba(0, 0, 0, 0.719);
+    border-radius: 10px;
+    margin-left: 80px;
+    margin-right: 80px;
+    color: white;
+}
+
+main .pembukaan h1 {
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bolder;
+}
+
+main .pembukaan p {
+    font-family: 'Times New Roman', Times, serif;
+    padding: 25px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+main .ISI {
+    padding: 50px 0px;
+    color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.719);
+    border-radius: 10px;
+    margin-left: 80px;
+    margin-right: 80px;
+}
+
+main .ISI img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 300px;
+    margin-top: 0;
+    padding: 0;
+}
+
+main .ISI .ISIISI {
+    display: flex;
+    justify-content: space-evenly;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: larger;
+    font-weight: 200;
+    text-align: center;
+}
+
+main .ISI .ISIISI .Job_Prospects {
+    margin-top: 5px;
+    color: white;
+    padding: 20px;
+    border-radius: 5%;
+}
+
+main .ISI .ISIISI .Job_Prospects p {
+    margin-top: 30px;
+}
+
+main .ISI .ISIISI .Lessons {
+    margin-top: 5px;
+    color: white;
+    padding: 20px;
+    border-radius: 5%;
+}
+
+main .ISI .ISIISI ol {
+    list-style: none;
+    text-align: left;
+}
+
+@media only screen and (max-width: 1000px) {
+    nav {
+        flex-wrap: wrap;
+    }
+
+    nav ul {
+        flex-direction: column;
+        width: 100%;
+        padding: 2rem;
+        margin-top: 1rem;
+    }
+    nav .menu {
+        font-size: smaller;
+    }
+
+    nav  .menu-icon {
+        display: flex;
+        align-items: center;
+    }
+
+    nav ul li a {
+        border-bottom: none;
+    }
+
+    nav .menu img {
+        width: 35px;
+    }
+
+    nav ul.hidden {
+        display: none;
+    }
+
+    main .ISI .ISIISI {
+        flex-direction: column;
+    }
+
+    main .ISI img {
+        max-width: 50%;
+    }
+}
+
+@media (max-width: 700px) {
+    nav .menu {
+        font-size: 7px;
+    }
+
+    nav .menu p {
+        display: none;
+    }
+
+    nav .menu-paragraph {
+        display: flex;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: smaller;
+        align-items: center;
+        font-weight: 700;
+    }
+
+    nav .menu img {
+        width: 25px;
+    }
+
+    main .pembukaan {
+        padding: 40px 1rem;
+    }
+
+    main .pembukaan h1 {
+        font-size: smaller;
+    }
+    
+    main .pembukaan p {
+        font-size: smaller;
+    }
+}
+
+@media (max-width: 600px) {
+    main .ISI .ISIISI {
+        font-size: xx-small;
+    }
+}
